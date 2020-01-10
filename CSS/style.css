@@ -73,6 +73,11 @@ section p{
     font-size: 1.5rem;
 }
 
+.log{
+    height: 100px;
+    background-color: red;
+}
+
 section#home{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/1.jpg");
     background-position: center;
@@ -87,6 +92,10 @@ section#about{
     background-size: cover;
 }
 
+section#about h1{
+    margin-bottom: 45vh;
+}
+
 section#login{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/3.jpg");
     background-position: center;
@@ -99,4 +108,20 @@ section#contact{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* lOGIN CSS */
+.window{
+    background-color:  black;
+    height: 50vh;
+    width: 30vw;
+    background: linear-gradient(to right, #000000, #434343); opacity: 0.85;
+}
+
+#info{
+    margin-top: 10vh;
+}
+
+.noAccount{
+    margin-top:5vh;
 }

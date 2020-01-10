@@ -5,11 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/typewriter.css">
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
     <title>Assistant Tomoya</title>
 </head>
-<body>
+<style>
+img{
+    width: 70%;
+    border-radius: 50%;
+}
 
+.row {
+  display: flex;
+  margin-top: -13vh;
+}
+
+.column {
+    margin-top: -23vh;
+  flex: 40%;
+  padding: 5px;
+}
+</style>
+<body>
     <div class="container">
         <nav class="navbar">
             <ul>
@@ -28,11 +44,55 @@
 
         <section id="about">
             <h1>About</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio libero ullam cumque? Unde, nesciunt labore.</p>
+                    <div class="row">
+                        <div class="column">
+                            <img src="/Images/aayush.jpg" alt="Aayush Pokharel">
+                            <p>Aayush Pokharel</p>
+                            <h5>Face Rec. Developer</h5>
+                    </div>
+                    <div class="column">
+                        <img src="/Images/eesa.jpg" alt="Eesa Aamer">
+                        <p>Eesa Aamer</p>
+                        <h5>OCR Developer</h5>
+                    </div>
+                    <div class="column">
+                        <img src="/Images/areeb.jpg" alt="Areeb Rehman">
+                        <p>Areeb Rehman</p>
+                        <h5>Team Leader</h5>
+                    </div>
+                    <div class="column">
+                        <img src="/Images/timmy.jpg" alt="Timmy Yung">
+                        <p>Timmy Yung</p>
+                        <h5>Documentation</h5>
+            
+                    </div>
+                    <div class="column">
+                        <img src="/Images/mahim.jpg" alt="Mahim Khan">
+                        <p>Mahim Khan</p>
+                        <h5>Person</h5>
+                    </div>
+                </div>
         </section>
 
         <section id="login">
-            <h1>Login</h1>
+          <h1>LOGIN</h1>
+            <center>
+              <div class="window">
+                <br>
+                <h2>Would you like to sign in?</h2>
+                <br>
+                <input id = 'email' type='email' placeholder='Email' class='input-line full-width'></input>
+                <input id = 'password' type='password' placeholder='Password' class='input-line full-width'></input>
+              <div class="noAccount">
+                <h3>Don't have an account?</h3>
+              <!-- SINGUP PAGE HERE -->
+                <a style=color:hotpink; href='Pages/signup.html'>Signup</a>
+                <br>
+                <br>
+                <button onclick="login()" class='ghost-round full-width'>Login</button>
+              </div>
+            </div>
+            </center>
         </section>
 
         <section id="contact">
@@ -41,5 +101,6 @@
         </section>
     </div>
 </body>
+<script src="JavaScript/login.js"></script>
 <script src="/JavaScript/main.js"></script>
 </html>
