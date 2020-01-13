@@ -110,6 +110,10 @@ section#contact{
     background-size: cover;
 }
 
+section#contact h1{
+    margin-bottom: 45vh;
+}
+
 /* lOGIN CSS */
 .window{
     background-color:  black;

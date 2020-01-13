@@ -2,15 +2,15 @@ let username;
 let email;
 let password;
 
-
-
-var config = {
-  apiKey: "AIzaSyBim0epGKuRzZxMgWbrBlTnfNMNtXxLZJE",
-  authDomain: "a29-duhdwj.firebaseapp.com",
-  databaseURL: "https://a29-duhdwj.firebaseio.com",
-  projectId: "a29-duhdwj",
-  storageBucket: "a29-duhdwj.appspot.com",
-  messagingSenderId: "545188817973"
+const config = {
+  apiKey: "AIzaSyC-dq14LCFEUTbm_hdSLhZ4mCp6SUPWims",
+  authDomain: "assistant-tomoya.firebaseapp.com",
+  databaseURL: "https://assistant-tomoya.firebaseio.com/",
+  projectId: "assistant-tomoya",
+  storageBucket: "assistant-tomoya.appspot.com",
+  messagingSenderId: "701573625629",
+  appId: "1:701573625629:web:fcb60921b9dfef1c8653f4",
+  measurementId: "G-WLW9NV86XD"
 };
 firebase.initializeApp(config);
 
@@ -33,7 +33,6 @@ function login(){
 // Add a realtime Listner for user data
 firebase.auth().onAuthStateChanged(firebaseUser => {
   if(firebaseUser){
-    document.getElementById('youin').style.display = 'block'
     document.getElementById('info').style.display = 'none'
   }
   else{
@@ -45,11 +44,4 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 function logoOut(){
   firebase.auth().signOut();
   location.reload();
-}
-
-
-
-function link(){
-  window.location.assign("https://aayush9029.github.io/Chatapp101/");
-
 }
