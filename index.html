@@ -15,7 +15,7 @@ section#about img{
 }
 
 section#contact img{
-    width: 3%
+    width: 10%
 }
 
 .row {
@@ -80,8 +80,9 @@ section#contact img{
 
         <section id="login">
           <h1>LOGIN</h1>
-            <center>
+            <div>
               <div class="window">
+            <div id="info">
                 <br>
                 <h2>Would you like to sign in?</h2>
                 <br>
@@ -96,21 +97,23 @@ section#contact img{
                 <br>
                 <br>
                 <button onclick="login()" class='ghost-round full-width'>Login</button>
-
+                <br>
+            </div>
+            </div>
                 <div id = 'youin'>
                     <div class = 'youinText'>Glad to See you again!</div>
                     <button onclick="logoOut()" id='ghost-round2'>Logout</button>
-                    <a href = 'Pages/mainProjects.html'  id='ghost-round2'>gotoApp</button>
+                    <a style="color: white;" href = 'Pages/mainProjects.html' id='ghost-round2'>Go To Apps</button></a>
                   </div>
 
-              </div>
             </div>
-            </center>
         </section>
 
         <section id="contact">
             <h1>Contact</h1>
-            <h2>To access the code:</h2> <img src="Images/github.png">here.</img>
+            <div style="margin-bottom: 17vh;">
+            <h2>To access the code:</h2><a href="https://github.com/Assistant-Tomoya"> <img src="Images/github.png"></img></a>
+        </div>
         </section>
     </div>
 </body>
