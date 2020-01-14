@@ -144,3 +144,11 @@ section#contact h1{
 .noAccount{
     margin-top:5vh;
 }
+
+#email, #password{
+    padding: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    background: whitesmoke;
+}
