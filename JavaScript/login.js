@@ -15,7 +15,6 @@ const config = {
 firebase.initializeApp(config);
 
 
-
 function login(){
   email = document.getElementById('email').value;
   password = document.getElementById('password').value;
@@ -33,6 +32,7 @@ function login(){
 // Add a realtime Listner for user data
 firebase.auth().onAuthStateChanged(firebaseUser => {
   if(firebaseUser){
+    document.getElementById('youin').style.display = 'block'
     document.getElementById('info').style.display = 'none'
   }
   else{
