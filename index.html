@@ -28,6 +28,54 @@ section#contact img{
   flex: 40%;
   padding: 5px;
 }
+
+.myButton {
+	box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	background:linear-gradient(to bottom, #a73f2d 5%, #b34332 100%);
+	background-color:#a73f2d;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #b34332 5%, #a73f2d 100%);
+	background-color:#b34332;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.myButton2 {
+	box-shadow:inset 0px 34px 0px -15px#29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
 </style>
 <body>
     <div class="container">
@@ -36,6 +84,7 @@ section#contact img{
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#login">Login</a></li>
+                <li><a href="#sides">Misc.</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -62,7 +111,7 @@ section#contact img{
                     <div class="column">
                         <img src="Images/areeb.jpg" alt="Areeb Rehman">
                         <p>Areeb Rehman</p>
-                        <h5>Person</h5>
+                        <h5>Misc.</h5>
                     </div>
                     <div class="column">
                         <img src="Images/timmy.jpg" alt="Timmy Yung">
@@ -96,17 +145,28 @@ section#contact img{
                 <a style=color:hotpink; href='Pages/signup.html'>Signup</a>
                 <br>
                 <br>
-                <button onclick="login()" class='ghost-round full-width'>Login</button>
+                <button class="myButton2" onclick="login()" class='ghost-round full-width'>Login</button>
                 <br>
             </div>
             </div>
                 <div id = 'youin'>
                     <div class = 'youinText'>Glad to See you again!</div>
-                    <button onclick="logoOut()" id='ghost-round2'>Logout</button>
+                    <button class="myButton" onclick="logoOut()" id='ghost-round2'>Logout</button>
                     <a style="color: white;" href = 'Pages/mainProjects.html' id='ghost-round2'>Go To Apps</button></a>
                   </div>
 
             </div>
+        </section>
+
+        <section id="sides">
+            <br>
+            <h1 id = "RandomName">Student Picker</h1>
+            <p>Please input the students' names below separated by a comma.</p>
+                <textarea name="kl" id="names" cols="30" rows="10"></textarea>
+                <div class="buttonSides">
+                    <button class="myButton" onclick="StudentPicker()">Generate</button>
+                    <button class="myButton2" onclick="clearfield()">Reset</button>
+                </div>
         </section>
 
         <section id="contact">
@@ -118,5 +178,6 @@ section#contact img{
     </div>
 </body>
 <script src="JavaScript/login.js"></script>
-<script src="/JavaScript/main.js"></script>
+<script src="JavaScript/main.js"></script>
+<script src="JavaScript/picker.js"></script>
 </html>
